@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Reflection;
 
-namespace Maybe.Tests
+namespace SpicyTaco.Maybe.Tests
 {
     [DebuggerStepThrough]
     public static class TypeExtensions

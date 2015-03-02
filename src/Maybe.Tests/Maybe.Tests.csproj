@@ -7,8 +7,8 @@
     <ProjectGuid>{742223CF-4F9A-40B7-8BDB-B1E5E3600CF0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Maybe.Tests</RootNamespace>
-    <AssemblyName>Maybe.Tests</AssemblyName>
+    <RootNamespace>SpicyTaco.Maybe.Tests</RootNamespace>
+    <AssemblyName>SpicyTaco.Maybe.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

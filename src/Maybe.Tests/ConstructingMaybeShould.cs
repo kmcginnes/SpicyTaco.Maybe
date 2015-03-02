@@ -2,43 +2,40 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Maybe.Tests
+namespace SpicyTaco.Maybe.Tests
 {
-    public class ConstructingMaybeShould
+    public class NothingShould
     {
         [Fact]
-        public void BePrivateAffair()
+        public void HavePrivateConstructor()
         {
-            var constructors = typeof (Maybe<>).Constructors();
+            var constructors = typeof (Nothing<>).Constructors();
 
             constructors.Should().NotBeEmpty();
             constructors.Should().OnlyContain(x => x.IsPrivate);
         }
+
+        [Fact]
+        public void BeOfTypeMaybe()
+        {
+            typeof (Nothing<String>).Should().BeAssignableTo<Maybe<String>>();
+        }
     }
 
-    public class EmptyMaybeShould
+    public class BindShould
     {
         [Fact]
-        public void ReturnSameInstanceEachTime()
+        public void ReturnNothingWhenNothing()
         {
-            var first = Maybe<String>.Empty;
-            var second = Maybe<String>.Empty;
-
-            first.Should().BeSameAs(second);
+            Nothing<String>.Instance.Bind(x => x.Length.ToMaybe())
+                .Should().BeSameAs(Nothing<Int32>.Instance);
         }
 
         [Fact]
-        public void NotHaveValue()
+        public void ReturnBoundValueWhenJust()
         {
-            Maybe<String>.Empty.HasValue.Should().BeFalse();
-        }
-
-        [Fact]
-        public void ThrowWhenAccessingValue()
-        {
-            Action act = () => { var v = Maybe<String>.Empty.Value; };
-
-            act.ShouldThrow<InvalidOperationException>();
+            "Some string".ToMaybe().Bind(x => x.Length.ToMaybe())
+                .Should().Be(11.ToMaybe());
         }
     }
 }
