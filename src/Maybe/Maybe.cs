@@ -5,7 +5,11 @@ using System.Text;
 
 namespace Maybe
 {
-    public class Class1
+    public class Maybe<T> where T : class
     {
+        Maybe()
+        {
+            
+        }
     }
 }
