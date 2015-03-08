@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SpicyTaco.Maybe</id>
+    <version>$version$</version>
+    <title>SpicyTaco Maybe Library</title>
+    <authors>kmcginnes</authors>
+    <owners>kmcginnes</owners>
+    <licenseUrl>https://github.com/kmcginnes/SpicyTaco.Maybe/blob/master/License.md</licenseUrl>
+    <projectUrl>https://github.com/kmcginnes/SpicyTaco.Maybe</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/kmcginnes/SpicyTaco.Maybe/master/icon/icon_61620.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NullReferenceExceptions are the root of all evil. Slay them for good with SpicyTaco.Maybe.</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2015 Kris McGinnes</copyright>
+    <tags>Maybe Option SpicyTaco</tags>
+    <files>
+      <file src="Maybe\bin\Release\**" target="lib\net40" />
+    </files>
+  </metadata>
+</package>
