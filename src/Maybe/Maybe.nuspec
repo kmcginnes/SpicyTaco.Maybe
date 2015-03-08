@@ -14,8 +14,8 @@
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
     <copyright>Copyright 2015 Kris McGinnes</copyright>
     <tags>Maybe Option SpicyTaco</tags>
-    <files>
-      <file src="bin\Release\**" target="lib\net40" />
-    </files>
   </metadata>
+  <files>
+    <file src="bin\Release\**" target="lib\net40" />
+  </files>
 </package>
