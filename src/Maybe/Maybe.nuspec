@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SpicyTaco.Maybe</id>
-    <version>$version$-prerelease</version>
+    <version>$version$</version>
     <title>SpicyTaco Maybe Library</title>
     <authors>kmcginnes</authors>
     <owners>kmcginnes</owners>
