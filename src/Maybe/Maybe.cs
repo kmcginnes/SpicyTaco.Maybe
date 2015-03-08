@@ -1,4 +1,4 @@
-﻿namespace SpicyTaco.Maybe
+﻿namespace SpicyTaco
 {
     public interface Maybe<T> { }
 }

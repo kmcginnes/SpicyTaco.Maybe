@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace SpicyTaco.Maybe
+namespace SpicyTaco
 {
-    public class Nothing<T> : Maybe<T>, IEquatable<Nothing<T>>
+    public sealed class Nothing<T> : Maybe<T>, IEquatable<Nothing<T>>
     {
         public static readonly Maybe<T> Instance = new Nothing<T>();
         readonly Lazy<string> _toString;

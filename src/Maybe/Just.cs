@@ -1,16 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SpicyTaco.Maybe
+namespace SpicyTaco
 {
-    public class Just<T> : Maybe<T>, IEquatable<Just<T>>
+    public sealed class Just<T> : Maybe<T>, IEquatable<Just<T>>
     {
         readonly T _value;
         public T Value { get { return _value; } }
 
-        public Just(T value)
+        Just(T value)
         {
             _value = value;
+        }
+
+        public static Just<TValue> FromValue<TValue>(TValue value)
+        {
+            return new Just<TValue>(value);
         }
 
         public bool Equals(Just<T> other)
@@ -19,7 +24,7 @@ namespace SpicyTaco.Maybe
             if (ReferenceEquals(this, other)) return true;
             return EqualityComparer<T>.Default.Equals(this.Value, other.Value);
         }
-
+        
         public override bool Equals(object obj)
         {
             if (ReferenceEquals(null, obj)) return false;
@@ -32,7 +37,7 @@ namespace SpicyTaco.Maybe
         {
             return EqualityComparer<T>.Default.GetHashCode(Value);
         }
-
+        
         public static bool operator ==(Just<T> left, Just<T> right)
         {
             return Equals(left, right);

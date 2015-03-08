@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SpicyTaco.Maybe
+namespace SpicyTaco
 {
     public static class MaybeMixins
     {
@@ -9,7 +9,7 @@ namespace SpicyTaco.Maybe
         {
             return EqualityComparer<T>.Default.Equals(value, default(T))
                 ? (Maybe<T>) Nothing<T>.Instance
-                : (Maybe<T>) new Just<T>(value);
+                : (Maybe<T>) Just<T>.FromValue(value);
         }
 
         public static Maybe<TRet> Bind<T, TRet>(this Maybe<T> maybe, Func<T, Maybe<TRet>> bindFunc)
