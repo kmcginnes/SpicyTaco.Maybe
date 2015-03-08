@@ -1,6 +1,10 @@
 SpicyTaco.Maybe
 ===============
 
+<a href="http://teamcity.krismcginnes.com:8084/viewType.html?buildTypeId=SpicyTacoMaybe_Build&guest=1">
+<img src="http://teamcity.krismcginnes.com:8084/app/rest/builds/buildType:(id:SpicyTacoMaybe_Build)/statusIcon"/>
+</a>
+
 No one likes NullReferenceExceptions. Let's change things. Let consumers of your code know when a return value might be empty. Force them to acknowledge a possible lack of value.
 
 When you're returning a value that might be null, follow this style:
