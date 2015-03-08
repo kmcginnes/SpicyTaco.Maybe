@@ -3,6 +3,10 @@ SpicyTaco.Maybe [![Build status](https://img.shields.io/teamcity/http/teamcity.k
 
 No one likes NullReferenceExceptions. Let's change things. Let consumers of your code know when a return value might be empty. Force them to acknowledge a possible lack of value.
 
+My goal is to make `Maybe` as easy to use as possible, but also force the consuming code down the path of success. I'm doing this by not including _nice to have_ features such as implicit conversions, `.HasValue` or `.Value`, etc.
+
+## Usage
+
 When you're returning a value that might be null, follow this style:
 
 ```c#
@@ -23,3 +27,15 @@ GetPersonByName("John", "Doe")
   .Do(person => SomeUsefulAction(person))
   .DoWhenEmpty(() => this.Log().Warn("No user named 'John Doe' could be found."));
 ```
+
+## Install
+
+You're welcome to install this library, but keep in mind it is a pre-release. I'm still plying with the API surface. Things might get renamed or dissapeared.
+
+```
+Install-Package SpicyTaco.Maybe -Pre
+```
+
+## License
+
+I've licensed this under MIT License. That means do what you want with this code.
