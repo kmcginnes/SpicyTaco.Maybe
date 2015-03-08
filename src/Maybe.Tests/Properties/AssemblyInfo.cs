@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SpicyTaco.Maybe")]
-[assembly: AssemblyDescription("NullReferenceExceptions are the root of all evil. Slay them for good with SpicyTaco.Maybe.")]
+[assembly: AssemblyTitle("SpicyTaco.Maybe.Tests")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SpicyTaco")]
-[assembly: AssemblyProduct("SpicyTaco.Maybe")]
+[assembly: AssemblyProduct("Maybe.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("09b9fa6b-c787-4d88-aa4a-f7def5b4ee1f")]
+[assembly: Guid("231e559c-4b0f-4082-980b-0b787a817361")]
 
 // Version information for an assembly consists of the following four values:
 //
