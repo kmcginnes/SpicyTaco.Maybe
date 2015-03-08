@@ -15,7 +15,7 @@
     <copyright>Copyright 2015 Kris McGinnes</copyright>
     <tags>Maybe Option SpicyTaco</tags>
     <files>
-      <file src="Maybe\bin\Release\**" target="lib\net40" />
+      <file src="bin\Release\**" target="lib\net40" />
     </files>
   </metadata>
 </package>
